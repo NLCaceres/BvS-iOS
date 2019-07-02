@@ -1,25 +1,180 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bat vs Superman Comic 2" translatesAutoresizingMaskIntoConstraints="NO" id="eau-a0-avo">
+                                <rect key="frame" x="0.0" y="40" width="375" height="738"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjm-Wq-VPg">
+                                <rect key="frame" x="214" y="153" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Z6a-4l-5ID"/>
+                                    <constraint firstAttribute="height" constant="60" id="uu6-e8-beT"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="darkknight_batman">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="batmanClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cay-K6-oF9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Super Sym copy" translatesAutoresizingMaskIntoConstraints="NO" id="o78-hg-Y18">
+                                <rect key="frame" x="87" y="154" width="90" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="vl6-G0-ri4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkknight_batman copy" translatesAutoresizingMaskIntoConstraints="NO" id="bkm-rU-Euf">
+                                <rect key="frame" x="421" y="154" width="90" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="OoS-sq-iby"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQe-0V-R0y">
+                                <rect key="frame" x="323" y="81" width="249" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Super Sym copy">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lNm-Jr-Pmu">
+                                <rect key="frame" x="0.0" y="0.0" width="620" height="610"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWA-ro-SNw">
+                                <rect key="frame" x="291" y="383" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c89-eh-aH7">
+                                <rect key="frame" x="249" y="40" width="126" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srZ-SP-QC2">
+                                <rect key="frame" x="100" y="153" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="M6l-r3-LQq"/>
+                                    <constraint firstAttribute="width" constant="60" id="yvC-wh-XLA"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Super Sym">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="supermanClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rbh-HV-L3K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUm-Ry-3Ww">
+                                <rect key="frame" x="7" y="563" width="360" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ACW-le-WfE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PpA-AW-cyf">
+                                <rect key="frame" x="113" y="425" width="149" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ft1-7X-ifb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T25-GG-rZ1">
+                                <rect key="frame" x="40" y="407" width="521" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="byM-v8-xCv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                <color key="textColor" red="0.99430513381958008" green="0.96466523408889771" blue="0.97040009498596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your side!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-d3-MCE">
+                                <rect key="frame" x="77" y="345" width="220" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dP5-c8-Uwz"/>
+                                    <constraint firstAttribute="width" constant="220" id="mQm-Dh-QB5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="27"/>
+                                <color key="textColor" red="0.99491643905639648" green="0.98980581760406494" blue="0.99503064155578613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tjm-Wq-VPg" firstAttribute="leading" secondItem="srZ-SP-QC2" secondAttribute="trailing" constant="54" id="00H-Z7-ZRu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tjm-Wq-VPg" secondAttribute="trailing" constant="85" id="1Mf-hA-fgx"/>
+                            <constraint firstItem="srZ-SP-QC2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="109" id="GUh-qE-SuN"/>
+                            <constraint firstItem="dd7-d3-MCE" firstAttribute="top" secondItem="srZ-SP-QC2" secondAttribute="bottom" constant="132" id="GV6-1S-FQ0"/>
+                            <constraint firstItem="srZ-SP-QC2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="84" id="IC1-YU-aZW"/>
+                            <constraint firstItem="dd7-d3-MCE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="61" id="IgP-jY-4jm"/>
+                            <constraint firstAttribute="trailing" secondItem="qUm-Ry-3Ww" secondAttribute="trailing" constant="8" id="M5m-dT-jve"/>
+                            <constraint firstAttribute="trailing" secondItem="eau-a0-avo" secondAttribute="trailing" id="ZYd-NM-piT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dd7-d3-MCE" secondAttribute="trailing" constant="62" id="Zs1-Ox-quL"/>
+                            <constraint firstItem="qUm-Ry-3Ww" firstAttribute="top" secondItem="PpA-AW-cyf" secondAttribute="bottom" constant="100" id="bts-Bq-Tla"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qUm-Ry-3Ww" secondAttribute="bottom" constant="175" id="ddJ-aN-pvI"/>
+                            <constraint firstItem="eau-a0-avo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ffl-XZ-OnF"/>
+                            <constraint firstItem="PpA-AW-cyf" firstAttribute="top" secondItem="dd7-d3-MCE" secondAttribute="bottom" constant="40" id="gMF-Ca-13f"/>
+                            <constraint firstItem="eau-a0-avo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="40" id="kKo-nT-sKp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PpA-AW-cyf" secondAttribute="trailing" constant="97" id="lBG-2c-aJi"/>
+                            <constraint firstItem="tjm-Wq-VPg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="109" id="pyx-yb-j0b"/>
+                            <constraint firstItem="PpA-AW-cyf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="97" id="u61-07-0dq"/>
+                            <constraint firstItem="qUm-Ry-3Ww" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="7" id="vC0-cb-PKh"/>
+                            <constraint firstItem="eau-a0-avo" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="yzI-7N-7VG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="o78-hg-Y18"/>
+                                <exclude reference="bkm-rU-Euf"/>
+                                <exclude reference="QQe-0V-R0y"/>
+                                <exclude reference="lNm-Jr-Pmu"/>
+                                <exclude reference="dWA-ro-SNw"/>
+                                <exclude reference="c89-eh-aH7"/>
+                                <exclude reference="T25-GG-rZ1"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="batmanSymbol" destination="tjm-Wq-VPg" id="ukK-KM-UHv"/>
+                        <outlet property="chooseLabel" destination="dd7-d3-MCE" id="88g-V0-WjX"/>
+                        <outlet property="messageLabel" destination="qUm-Ry-3Ww" id="YMs-J0-RTZ"/>
+                        <outlet property="nameTextField" destination="PpA-AW-cyf" id="Kn3-8e-cXh"/>
+                        <outlet property="supermanSymbol" destination="srZ-SP-QC2" id="FAh-mb-Zx9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="375.36231884057975" y="346.875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bat vs Superman Comic 2" width="1024" height="1024"/>
+        <image name="Super Sym" width="120" height="120"/>
+        <image name="Super Sym copy" width="2000" height="1000"/>
+        <image name="darkknight_batman" width="120" height="120"/>
+        <image name="darkknight_batman copy" width="300" height="200"/>
+    </resources>
 </document>
